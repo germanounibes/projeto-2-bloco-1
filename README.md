@@ -1,4 +1,4 @@
-# 01 — Página de Links (estilo Linktree)
+# 02 — Página de Links (estilo Linktree)
 
 > Uma página com seu nome, foto e botões linkando pras suas redes sociais.
 
