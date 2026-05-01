@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+html
+.back-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -100;
+    object-fit: cover;
+    object-position: center;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*hover do nav*/
+body:has(nav:hover) #pfp {
+    border: 5px solid rgb(255, 255, 255, 0.8);
+}
+body:has(nav:hover) h1 {
+    color: rgb(255, 255, 255);
+}
+body:has(nav:hover) h3 {
+    color: rgb(255, 255, 255);
+}
+/*hover do img*/
+body:has(img:hover) #pfp {
+    border: 5px solid rgb(255, 255, 255, 0.8);
+}
+body:has(img:hover) h1 {
+    color: rgb(255, 255, 255);
+}
+body:has(img:hover) h3 {
+    color: rgb(255, 255, 255);
+}
+body:has(img:hover) nav {
+    background-color: rgb(255, 255, 255);
+}
+nav {
+    background-color: rgb(255, 255, 255, 0);
+    text-align: center;
+    width: 95vw;
+    padding: 2%;
+    border-radius: 15px;
+    transition: all 0.5s ease;
+}
+
+nav:hover {
+    background-color: rgb(255, 255, 255);
+}
+
+main {
+    text-align: center;
+}
+
+#pfp {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-top: 5vh;
+    border: 5px solid rgb(255, 255, 255, 0.2);
+    transition: all 0.5s ease;
+}
+h1{
+    margin-top: 1vh;
+    color: rgb(255, 255, 255, 0.5);
+    font-family: "Caveat", cursive, Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 3.5em;
+    transition: all 0.5s ease;
+}
+h3 {
+    color: rgb(255, 255, 255, 0.5);
+    font-family: "Caveat", cursive, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+    transition: all 0.5s ease;
+}
