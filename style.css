@@ -30,7 +30,7 @@ body:has(nav:hover) h1 {
     color: var(--primary-color);
 }
 
-body:has(nav:hover) h3 {
+body:has(nav:hover) h2 {
     color: var(--primary-color);
 }
 
@@ -47,7 +47,7 @@ body:has(img:hover) h1 {
     color: var(--primary-color);
 }
 
-body:has(img:hover) h3 {
+body:has(img:hover) h2 {
     color: var(--primary-color);
 }
 
@@ -94,7 +94,7 @@ h1 {
     transition: all 0.8s ease;
 }
 
-h3 {
+h2 {
     color: var(--secondary-color);
     font-family: "Caveat", cursive, Arial, Helvetica, sans-serif;
     font-weight: bold;
