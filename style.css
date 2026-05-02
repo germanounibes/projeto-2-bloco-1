@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
-html
-.back-video {
+:root {
+    --primary-color: rgb(255, 255, 255, 0.9);
+    --secondary-color: rgb(255, 255, 255, 0.5);
+    --text-hover-color: rgb(0, 0, 0, 0.9);
+}
+html .back-video {
     position: fixed;
     top: 0;
     left: 0;
@@ -16,40 +20,56 @@ body {
     flex-direction: column;
     align-items: center;
 }
+
 /*hover do nav*/
 body:has(nav:hover) #pfp {
-    border: 5px solid rgb(255, 255, 255, 0.8);
+    border: 5px solid var(--primary-color);
 }
+
 body:has(nav:hover) h1 {
-    color: rgb(255, 255, 255);
+    color: var(--primary-color);
 }
+
 body:has(nav:hover) h3 {
-    color: rgb(255, 255, 255);
+    color: var(--primary-color);
 }
+
+body:has(nav:hover) a {
+    color: var(--text-hover-color);
+}
+
 /*hover do img*/
 body:has(img:hover) #pfp {
-    border: 5px solid rgb(255, 255, 255, 0.8);
+    border: 5px solid var(--primary-color);
 }
+
 body:has(img:hover) h1 {
-    color: rgb(255, 255, 255);
+    color: var(--primary-color);
 }
+
 body:has(img:hover) h3 {
-    color: rgb(255, 255, 255);
+    color: var(--primary-color);
 }
+
 body:has(img:hover) nav {
-    background-color: rgb(255, 255, 255);
+    background-color: var(--primary-color);
 }
+
+body:has(img:hover) a {
+    color: var(--text-hover-color);
+}
+
 nav {
     background-color: rgb(255, 255, 255, 0);
     text-align: center;
     width: 95vw;
     padding: 2%;
     border-radius: 15px;
-    transition: all 0.5s ease;
+    transition: all 0.8s ease;
 }
 
 nav:hover {
-    background-color: rgb(255, 255, 255);
+    background-color: var(--primary-color);
 }
 
 main {
@@ -62,20 +82,32 @@ main {
     border-radius: 50%;
     margin-top: 5vh;
     border: 5px solid rgb(255, 255, 255, 0.2);
-    transition: all 0.5s ease;
+    transition: all 0.8s ease;
 }
-h1{
+
+h1 {
     margin-top: 1vh;
-    color: rgb(255, 255, 255, 0.5);
+    color: var(--secondary-color);
     font-family: "Caveat", cursive, Arial, Helvetica, sans-serif;
     font-weight: bolder;
     font-size: 3.5em;
-    transition: all 0.5s ease;
+    transition: all 0.8s ease;
 }
+
 h3 {
-    color: rgb(255, 255, 255, 0.5);
+    color: var(--secondary-color);
     font-family: "Caveat", cursive, Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size: 1.5em;
-    transition: all 0.5s ease;
+    transition: all 0.8s ease;
+}
+
+a {
+    color: rgb(255, 255, 255);
+    font-family: "Caveat", cursive, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-decoration: none;
+    transition: all 0.8s ease;
+    margin: 0 2%;
 }
